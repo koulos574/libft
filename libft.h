@@ -6,7 +6,7 @@
 /*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 19:31:36 by vifontai          #+#    #+#             */
-/*   Updated: 2019/12/20 18:56:42 by vifontai         ###   ########.fr       */
+/*   Updated: 2020/01/24 05:14:55 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char			*ft_strtrim(char const *s1, char const *d);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 typedef struct	s_list
 {

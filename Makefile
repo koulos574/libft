@@ -34,6 +34,7 @@ SRC = 	ft_split.c\
 		ft_itoa.c\
 		ft_strmapi.c\
 		ft_putnbr_fd.c\
+		ft_strsub.c\
 
 OBJ = 	ft_split.o\
 		ft_strtrim.o\
@@ -69,6 +70,7 @@ OBJ = 	ft_split.o\
 		ft_strmapi.o\
 		ft_itoa.o\
 		ft_putnbr_fd.o\
+		ft_strsub.o\
 
 SRC_LIST = 	ft_split.c\
 		ft_strtrim.c\
@@ -113,6 +115,7 @@ SRC_LIST = 	ft_split.c\
 		ft_lstclear.c\
 		ft_lstadd_front.c\
 		ft_lstnew.c\
+		ft_strsub.c\
 
 OBJ_LIST = 	ft_split.o\
 			ft_strtrim.o\
@@ -157,6 +160,7 @@ OBJ_LIST = 	ft_split.o\
 		ft_lstclear.o\
 		ft_lstadd_front.o\
 		ft_lstnew.o\
+		ft_strsub.o\
 
 CC = gcc
 
