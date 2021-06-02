@@ -6,17 +6,17 @@
 /*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:18:10 by vifontai          #+#    #+#             */
-/*   Updated: 2021/06/02 16:13:00 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 17:03:25 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_space(char c)
+static int	is_space(char x)
 {
-	if (nptr[x] == ' ' || nptr[x] == '\f' || nptr[x] == '\n')
+	if (x == ' ' || x == '\f' || x == '\n')
 		return (1);
-	else if (nptr[x] == '\r' || nptr[x] == '\t' || nptr[x] == '\v')
+	else if (x == '\r' || x == '\t' || x == '\v')
 		return (1);
 	return (0);
 }
