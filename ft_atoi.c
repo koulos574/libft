@@ -3,16 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:18:10 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:20:33 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:13:00 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *nptr)
+static int	is_space(char c)
+{
+	if (nptr[x] == ' ' || nptr[x] == '\f' || nptr[x] == '\n')
+		return (1);
+	else if (nptr[x] == '\r' || nptr[x] == '\t' || nptr[x] == '\v')
+		return (1);
+	return (0);
+}
+
+int	ft_atoi(const char *nptr)
 {
 	size_t		x;
 	long		y;
@@ -21,8 +30,7 @@ int		ft_atoi(const char *nptr)
 	z = 0;
 	x = 0;
 	y = 1;
-	while (nptr[x] == ' ' || nptr[x] == '\f' || nptr[x] == '\n' ||
-			nptr[x] == '\r' || nptr[x] == '\t' || nptr[x] == '\v')
+	while (is_space(nptr[x]))
 		x++;
 	if (nptr[x] == '-')
 		y = -1;

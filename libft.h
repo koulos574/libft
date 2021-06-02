@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 19:31:36 by vifontai          #+#    #+#             */
-/*   Updated: 2020/01/24 05:19:44 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:32:22 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strnew(size_t size);
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;

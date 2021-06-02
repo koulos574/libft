@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:16:48 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:16:49 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:32:40 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

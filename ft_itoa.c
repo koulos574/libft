@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:34:04 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:38:52 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:07:21 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int			ft_intlen(int n)
+static int	ft_intlen(int n)
 {
 	int		i;
 
@@ -32,14 +32,14 @@ static int			ft_intlen(int n)
 	return (i);
 }
 
-static char			*ft_exception(char *str)
+static char	*ft_exception(char *str)
 {
 	str[0] = '0';
 	str[1] = '\0';
 	return (str);
 }
 
-static char			*ft_reverse(char *str)
+static char	*ft_reverse(char *str)
 {
 	int		i;
 	int		j;
@@ -61,7 +61,7 @@ static char			*ft_reverse(char *str)
 	return (str);
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	int		i;
@@ -71,7 +71,8 @@ char				*ft_itoa(int n)
 	neg = n;
 	if (neg < 0)
 		neg = neg * -1;
-	if (!(str = (char *)malloc(ft_intlen(n) * sizeof(char) + 1)))
+	str = (char *)malloc(ft_intlen(n) * sizeof(char) + 1);
+	if (!str)
 		return (0);
 	if (neg == 0)
 		return (ft_exception(str));

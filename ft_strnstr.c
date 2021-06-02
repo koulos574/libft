@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:18:03 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:18:05 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:33:07 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	if (s2[i] == '\0')
-		return ((char*)s1);
+		return ((char *)s1);
 	while (s1[i] && i < n)
 	{
 		j = 0;

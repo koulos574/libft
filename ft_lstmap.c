@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:37:34 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:37:58 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:31:46 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *bro;
-	t_list *size;
+	t_list	*bro;
+	t_list	*size;
 
 	if (lst == 0)
 		return (0);
 	size = lst;
-	if (!(bro = malloc(ft_lstsize(size) * sizeof(size))))
+	bro = malloc(ft_lstsize(size) * sizeof(size));
+	if (!bro)
 		return (NULL);
 	bro = (*f)(lst);
 	while (size)

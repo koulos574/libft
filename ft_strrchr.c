@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 20:17:37 by vifontai          #+#    #+#             */
-/*   Updated: 2019/11/28 20:17:38 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:19:39 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i])

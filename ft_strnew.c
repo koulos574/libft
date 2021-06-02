@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 05:18:23 by vifontai          #+#    #+#             */
-/*   Updated: 2020/01/24 05:18:34 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:14:20 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ char	*ft_strnew(size_t size)
 {
 	char	*str;
 
-	if (!(str = (char *)malloc(sizeof(char) * size + 1)))
+	str = (char *)malloc(sizeof(char) * size + 1);
+	if (!str)
 		return (NULL);
 	str[size] = '\0';
 	while (size--)

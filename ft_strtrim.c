@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vifontai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vifontai <vifontai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/11 13:24:26 by vifontai          #+#    #+#             */
-/*   Updated: 2020/01/11 14:40:06 by vifontai         ###   ########.fr       */
+/*   Updated: 2021/06/02 16:07:35 by vifontai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strtrim(char const *s, char const *set)
+char	*ft_strtrim(char const *s, char const *set)
 {
 	int		i;
 	int		j;
