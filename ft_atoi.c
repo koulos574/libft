@@ -42,7 +42,7 @@ int	ft_atoi(const char *nptr)
 		if (z > 2147483648 && y == -1)
 			return (0);
 		if (z > 2147483648)
-			return (-1);
+			return (0);
 		x++;
 	}
 	return (z * y);
